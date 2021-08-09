@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class HotelReservationMain {
      private static List<HotelCheck> hotelList = new ArrayList<HotelCheck>();
+    public static void addHotel(String hotelName, int rateForCustomer) {
+        HotelCheck hotel = new HotelCheck(hotelName, rateForCustomer);
+        hotelList.add(hotel);
+    }
     public static void main(String[] args) {
         System.out.println("Welcome To The Hotel Reservation System");
         HotelCheck lakeWood = new HotelCheck("Lakewood",120);
